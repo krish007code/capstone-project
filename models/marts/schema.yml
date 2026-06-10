@@ -1,0 +1,56 @@
+version: 2
+
+models:
+  - name: dim_customers
+    description: "Customer dimension table enriched with upstream calculations for lifetime value and purchasing frequency."
+    columns:
+      - name: customer_id
+        description: "The primary key identifying a unique customer record."
+        data_tests:
+          - unique
+          - not_null
+
+  - name: dim_products
+    description: "Menu optimization table tracking sales volumes, gross revenues, and total profits per product."
+    columns:
+      - name: product_id
+        description: "The primary key identifying a unique menu item."
+        data_tests:
+          - unique
+          - not_null
+
+  - name: dim_stores
+    description: "Store profitability dimension tracking financial performance metrics and profit margins by location."
+    columns:
+      - name: store_id
+        description: "The primary key identifying a unique storefront location."
+        data_tests:
+          - unique
+          - not_null
+
+  - name: fct_orders
+    description: "The core transactional fact table. One row per order receipt detailing rolled-up financial performance."
+    columns:
+      - name: order_id
+        description: "The primary key identifying the unique transaction."
+        data_tests:
+          - unique
+          - not_null
+          
+      - name: customer_id
+        description: "Foreign key linking the transaction to a specific customer."
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_customers')
+                field: customer_id
+
+      - name: store_id
+        description: "Foreign key linking the transaction to a physical retail store location."
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_stores')
+                field: store_id

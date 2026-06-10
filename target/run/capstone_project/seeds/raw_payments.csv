@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "capstone_dev"."main"."raw_payments" ("id" integer,"order_id" integer,"payment_method" text,"amount" integer)
+  ;
+    -- dbt seed --
+    
+          COPY "capstone_dev"."main"."raw_payments" FROM '/home/krish/capstone-project/seeds/raw_payments.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

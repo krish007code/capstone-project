@@ -1,0 +1,51 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: "Cleaned master list of Jaffle Shop customers."
+    columns:
+      - name: customer_id
+        description: "The unique primary key for each customer."
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_stores
+    description: "Lookup table for physical storefront locations."
+    columns:
+      - name: store_id
+        description: "The unique primary key for each physical store."
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_products
+    description: "The master menu table outlining prices and cost of goods sold."
+    columns:
+      - name: product_id
+        description: "The unique primary key for each menu item."
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_orders
+    description: "Transaction header records detailing order totals and timestamps."
+    columns:
+      - name: order_id
+        description: "The unique primary key for each order receipt."
+        data_tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: "Foreign key mapping back to the customer who placed the order."
+        data_tests:
+          - not_null
+
+  - name: stg_items
+    description: "Line items containing individual products inside a basket transaction."
+    columns:
+      - name: item_id
+        description: "The unique primary key for a single line item."
+        data_tests:
+          - unique
+          - not_null

@@ -1,0 +1,12 @@
+{{ config(materialized='view') }}
+
+SELECT
+    cast(id as VARCHAR) as order_id,
+    cast(customer as VARCHAR) as customer_id,
+    cast(ordered_at as TIMESTAMP) as ordered_at,
+    cast(store_id as VARCHAR) as store_id,
+    cast(subtotal as INTEGER) as subtotal,
+    cast(tax_paid as INTEGER) as tax_paid,
+    cast(order_total as INTEGER) as order_total
+FROM {{ ref('raw_orders') }}
+    

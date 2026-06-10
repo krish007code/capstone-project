@@ -1,0 +1,11 @@
+
+    
+    
+    truncate table "capstone_dev"."main"."raw_items";
+    -- dbt seed --
+    
+          COPY "capstone_dev"."main"."raw_items" FROM '/home/krish/capstone-project/seeds/raw_items.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  
