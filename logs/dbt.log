@@ -20755,3 +20755,369 @@ having count(*) > 1
 [0m02:31:06.345104 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcc972e7ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcc972e7710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcc972e76b0>]}
 [0m02:31:06.345321 [debug] [MainThread]: Flushing usage events
 [0m02:31:08.355846 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:12:47.015958 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d35cddbe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d391c2990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d34d53c50>]}
+
+
+============================== 23:12:47.020111 | 589c41bb-873e-4131-a50a-1ad9619db51c ==============================
+[0m23:12:47.020111 [info ] [MainThread]: Running with dbt=1.11.11
+[0m23:12:47.020513 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'version_check': 'True', 'log_path': '/home/krish/capstone-project/logs', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'no_print': 'None', 'debug': 'False', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/home/krish/.dbt', 'fail_fast': 'False', 'target_path': 'None', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'warn_error': 'None', 'empty': 'None', 'invocation_command': 'dbt docs generate', 'printer_width': '80', 'static_parser': 'True', 'write_json': 'True', 'log_format': 'default', 'log_cache_events': 'False'}
+[0m23:12:47.217063 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '589c41bb-873e-4131-a50a-1ad9619db51c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d359d5350>]}
+[0m23:12:47.255026 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '589c41bb-873e-4131-a50a-1ad9619db51c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d34d73790>]}
+[0m23:12:47.256136 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m23:12:47.297436 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m23:12:47.367831 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:12:47.368124 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m23:12:47.368291 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:12:47.375480 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.capstone_project.example
+[0m23:12:47.400107 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '589c41bb-873e-4131-a50a-1ad9619db51c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d2ac3b450>]}
+[0m23:12:47.411853 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '589c41bb-873e-4131-a50a-1ad9619db51c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d2acd2030>]}
+[0m23:12:47.412209 [info ] [MainThread]: Found 6 seeds, 15 models, 21 data tests, 485 macros
+[0m23:12:47.412452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '589c41bb-873e-4131-a50a-1ad9619db51c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d2af5a0b0>]}
+[0m23:12:47.414199 [info ] [MainThread]: 
+[0m23:12:47.414500 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m23:12:47.414704 [info ] [MainThread]: 
+[0m23:12:47.415064 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m23:12:47.419970 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_capstone_dev_main'
+[0m23:12:47.471788 [debug] [ThreadPool]: Using duckdb connection "list_capstone_dev_main"
+[0m23:12:47.472501 [debug] [ThreadPool]: On list_capstone_dev_main: BEGIN
+[0m23:12:47.472951 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:12:47.492245 [debug] [ThreadPool]: SQL status: OK in 0.019 seconds
+[0m23:12:47.492944 [debug] [ThreadPool]: Using duckdb connection "list_capstone_dev_main"
+[0m23:12:47.493392 [debug] [ThreadPool]: On list_capstone_dev_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "capstone_project", "target_name": "dev", "connection_name": "list_capstone_dev_main"} */
+select
+      'capstone_dev' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'capstone_dev'
+  
+[0m23:12:47.498253 [debug] [ThreadPool]: SQL status: OK in 0.004 seconds
+[0m23:12:47.500370 [debug] [ThreadPool]: On list_capstone_dev_main: ROLLBACK
+[0m23:12:47.503258 [debug] [ThreadPool]: Failed to rollback 'list_capstone_dev_main'
+[0m23:12:47.503832 [debug] [ThreadPool]: On list_capstone_dev_main: Close
+[0m23:12:47.507787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '589c41bb-873e-4131-a50a-1ad9619db51c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d2a1f3930>]}
+[0m23:12:47.513329 [debug] [Thread-2 (]: Began running node seed.capstone_project.raw_items
+[0m23:12:47.514169 [debug] [Thread-2 (]: Acquiring new duckdb connection 'seed.capstone_project.raw_items'
+[0m23:12:47.514718 [debug] [Thread-2 (]: Began compiling node seed.capstone_project.raw_items
+[0m23:12:47.520157 [debug] [Thread-1 (]: Began running node seed.capstone_project.raw_customers
+[0m23:12:47.522671 [debug] [Thread-2 (]: Began executing node seed.capstone_project.raw_items
+[0m23:12:47.523603 [debug] [Thread-3 (]: Began running node seed.capstone_project.raw_orders
+[0m23:12:47.524871 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_capstone_dev_main, now seed.capstone_project.raw_customers)
+[0m23:12:47.525852 [debug] [Thread-4 (]: Began running node seed.capstone_project.raw_products
+[0m23:12:47.527045 [debug] [Thread-2 (]: Finished running node seed.capstone_project.raw_items
+[0m23:12:47.528043 [debug] [Thread-3 (]: Acquiring new duckdb connection 'seed.capstone_project.raw_orders'
+[0m23:12:47.528766 [debug] [Thread-1 (]: Began compiling node seed.capstone_project.raw_customers
+[0m23:12:47.529832 [debug] [Thread-4 (]: Acquiring new duckdb connection 'seed.capstone_project.raw_products'
+[0m23:12:47.530646 [debug] [Thread-2 (]: Began running node seed.capstone_project.raw_stores
+[0m23:12:47.531882 [debug] [Thread-3 (]: Began compiling node seed.capstone_project.raw_orders
+[0m23:12:47.535133 [debug] [Thread-1 (]: Began executing node seed.capstone_project.raw_customers
+[0m23:12:47.535929 [debug] [Thread-4 (]: Began compiling node seed.capstone_project.raw_products
+[0m23:12:47.536828 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly seed.capstone_project.raw_items, now seed.capstone_project.raw_stores)
+[0m23:12:47.539044 [debug] [Thread-3 (]: Began executing node seed.capstone_project.raw_orders
+[0m23:12:47.540257 [debug] [Thread-1 (]: Finished running node seed.capstone_project.raw_customers
+[0m23:12:47.542537 [debug] [Thread-4 (]: Began executing node seed.capstone_project.raw_products
+[0m23:12:47.543285 [debug] [Thread-2 (]: Began compiling node seed.capstone_project.raw_stores
+[0m23:12:47.544460 [debug] [Thread-3 (]: Finished running node seed.capstone_project.raw_orders
+[0m23:12:47.545420 [debug] [Thread-1 (]: Began running node seed.capstone_project.raw_supplies
+[0m23:12:47.546987 [debug] [Thread-4 (]: Finished running node seed.capstone_project.raw_products
+[0m23:12:47.550529 [debug] [Thread-2 (]: Began executing node seed.capstone_project.raw_stores
+[0m23:12:47.551639 [debug] [Thread-3 (]: Began running node model.capstone_project.stg_items
+[0m23:12:47.552929 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.capstone_project.raw_customers, now seed.capstone_project.raw_supplies)
+[0m23:12:47.553906 [debug] [Thread-4 (]: Began running node model.capstone_project.stg_customers
+[0m23:12:47.555630 [debug] [Thread-2 (]: Finished running node seed.capstone_project.raw_stores
+[0m23:12:47.556897 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly seed.capstone_project.raw_orders, now model.capstone_project.stg_items)
+[0m23:12:47.557805 [debug] [Thread-1 (]: Began compiling node seed.capstone_project.raw_supplies
+[0m23:12:47.558725 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly seed.capstone_project.raw_products, now model.capstone_project.stg_customers)
+[0m23:12:47.559742 [debug] [Thread-2 (]: Began running node model.capstone_project.stg_orders
+[0m23:12:47.560838 [debug] [Thread-3 (]: Began compiling node model.capstone_project.stg_items
+[0m23:12:47.563392 [debug] [Thread-1 (]: Began executing node seed.capstone_project.raw_supplies
+[0m23:12:47.564168 [debug] [Thread-4 (]: Began compiling node model.capstone_project.stg_customers
+[0m23:12:47.565192 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly seed.capstone_project.raw_stores, now model.capstone_project.stg_orders)
+[0m23:12:47.570011 [debug] [Thread-3 (]: Writing injected SQL for node "model.capstone_project.stg_items"
+[0m23:12:47.571734 [debug] [Thread-1 (]: Finished running node seed.capstone_project.raw_supplies
+[0m23:12:47.576629 [debug] [Thread-4 (]: Writing injected SQL for node "model.capstone_project.stg_customers"
+[0m23:12:47.577487 [debug] [Thread-2 (]: Began compiling node model.capstone_project.stg_orders
+[0m23:12:47.578846 [debug] [Thread-1 (]: Began running node model.capstone_project.stg_products
+[0m23:12:47.580349 [debug] [Thread-3 (]: Began executing node model.capstone_project.stg_items
+[0m23:12:47.584546 [debug] [Thread-2 (]: Writing injected SQL for node "model.capstone_project.stg_orders"
+[0m23:12:47.585622 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.capstone_project.raw_supplies, now model.capstone_project.stg_products)
+[0m23:12:47.586495 [debug] [Thread-4 (]: Began executing node model.capstone_project.stg_customers
+[0m23:12:47.587797 [debug] [Thread-3 (]: Finished running node model.capstone_project.stg_items
+[0m23:12:47.588852 [debug] [Thread-1 (]: Began compiling node model.capstone_project.stg_products
+[0m23:12:47.589711 [debug] [Thread-2 (]: Began executing node model.capstone_project.stg_orders
+[0m23:12:47.591129 [debug] [Thread-4 (]: Finished running node model.capstone_project.stg_customers
+[0m23:12:47.591948 [debug] [Thread-3 (]: Began running node model.capstone_project.stg_stores
+[0m23:12:47.596834 [debug] [Thread-1 (]: Writing injected SQL for node "model.capstone_project.stg_products"
+[0m23:12:47.598657 [debug] [Thread-2 (]: Finished running node model.capstone_project.stg_orders
+[0m23:12:47.599542 [debug] [Thread-4 (]: Began running node model.capstone_project.stg_supplies
+[0m23:12:47.600884 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.capstone_project.stg_items, now model.capstone_project.stg_stores)
+[0m23:12:47.602105 [debug] [Thread-2 (]: Began running node test.capstone_project.not_null_stg_items_item_id.2983e86e1a
+[0m23:12:47.603512 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.capstone_project.stg_customers, now model.capstone_project.stg_supplies)
+[0m23:12:47.604378 [debug] [Thread-1 (]: Began executing node model.capstone_project.stg_products
+[0m23:12:47.605482 [debug] [Thread-3 (]: Began compiling node model.capstone_project.stg_stores
+[0m23:12:47.606375 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.capstone_project.stg_orders, now test.capstone_project.not_null_stg_items_item_id.2983e86e1a)
+[0m23:12:47.607259 [debug] [Thread-4 (]: Began compiling node model.capstone_project.stg_supplies
+[0m23:12:47.608670 [debug] [Thread-1 (]: Finished running node model.capstone_project.stg_products
+[0m23:12:47.612212 [debug] [Thread-3 (]: Writing injected SQL for node "model.capstone_project.stg_stores"
+[0m23:12:47.613070 [debug] [Thread-2 (]: Began compiling node test.capstone_project.not_null_stg_items_item_id.2983e86e1a
+[0m23:12:47.616764 [debug] [Thread-4 (]: Writing injected SQL for node "model.capstone_project.stg_supplies"
+[0m23:12:47.617649 [debug] [Thread-1 (]: Began running node test.capstone_project.unique_stg_items_item_id.20a7a48757
+[0m23:12:47.630361 [debug] [Thread-3 (]: Began executing node model.capstone_project.stg_stores
+[0m23:12:47.635567 [debug] [Thread-2 (]: Writing injected SQL for node "test.capstone_project.not_null_stg_items_item_id.2983e86e1a"
+[0m23:12:47.636909 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.capstone_project.stg_products, now test.capstone_project.unique_stg_items_item_id.20a7a48757)
+[0m23:12:47.638480 [debug] [Thread-3 (]: Finished running node model.capstone_project.stg_stores
+[0m23:12:47.639407 [debug] [Thread-4 (]: Began executing node model.capstone_project.stg_supplies
+[0m23:12:47.640490 [debug] [Thread-1 (]: Began compiling node test.capstone_project.unique_stg_items_item_id.20a7a48757
+[0m23:12:47.641547 [debug] [Thread-3 (]: Began running node test.capstone_project.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m23:12:47.642967 [debug] [Thread-4 (]: Finished running node model.capstone_project.stg_supplies
+[0m23:12:47.643706 [debug] [Thread-2 (]: Began executing node test.capstone_project.not_null_stg_items_item_id.2983e86e1a
+[0m23:12:47.653143 [debug] [Thread-1 (]: Writing injected SQL for node "test.capstone_project.unique_stg_items_item_id.20a7a48757"
+[0m23:12:47.653937 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.capstone_project.stg_stores, now test.capstone_project.not_null_stg_customers_customer_id.e2cfb1f9aa)
+[0m23:12:47.654923 [debug] [Thread-4 (]: Began running node test.capstone_project.unique_stg_customers_customer_id.c7614daada
+[0m23:12:47.656565 [debug] [Thread-2 (]: Finished running node test.capstone_project.not_null_stg_items_item_id.2983e86e1a
+[0m23:12:47.657775 [debug] [Thread-3 (]: Began compiling node test.capstone_project.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m23:12:47.658855 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.capstone_project.stg_supplies, now test.capstone_project.unique_stg_customers_customer_id.c7614daada)
+[0m23:12:47.659652 [debug] [Thread-1 (]: Began executing node test.capstone_project.unique_stg_items_item_id.20a7a48757
+[0m23:12:47.660534 [debug] [Thread-2 (]: Began running node model.capstone_project.int_customer_order_history
+[0m23:12:47.666935 [debug] [Thread-4 (]: Began compiling node test.capstone_project.unique_stg_customers_customer_id.c7614daada
+[0m23:12:47.668114 [debug] [Thread-3 (]: Writing injected SQL for node "test.capstone_project.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m23:12:47.669404 [debug] [Thread-1 (]: Finished running node test.capstone_project.unique_stg_items_item_id.20a7a48757
+[0m23:12:47.670287 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.capstone_project.not_null_stg_items_item_id.2983e86e1a, now model.capstone_project.int_customer_order_history)
+[0m23:12:47.676630 [debug] [Thread-4 (]: Writing injected SQL for node "test.capstone_project.unique_stg_customers_customer_id.c7614daada"
+[0m23:12:47.677656 [debug] [Thread-1 (]: Began running node test.capstone_project.not_null_stg_orders_customer_id.af79d5e4b5
+[0m23:12:47.678555 [debug] [Thread-3 (]: Began executing node test.capstone_project.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m23:12:47.679451 [debug] [Thread-2 (]: Began compiling node model.capstone_project.int_customer_order_history
+[0m23:12:47.680605 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.capstone_project.unique_stg_items_item_id.20a7a48757, now test.capstone_project.not_null_stg_orders_customer_id.af79d5e4b5)
+[0m23:12:47.681510 [debug] [Thread-4 (]: Began executing node test.capstone_project.unique_stg_customers_customer_id.c7614daada
+[0m23:12:47.682863 [debug] [Thread-3 (]: Finished running node test.capstone_project.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m23:12:47.687057 [debug] [Thread-2 (]: Writing injected SQL for node "model.capstone_project.int_customer_order_history"
+[0m23:12:47.687915 [debug] [Thread-1 (]: Began compiling node test.capstone_project.not_null_stg_orders_customer_id.af79d5e4b5
+[0m23:12:47.689336 [debug] [Thread-4 (]: Finished running node test.capstone_project.unique_stg_customers_customer_id.c7614daada
+[0m23:12:47.690096 [debug] [Thread-3 (]: Began running node test.capstone_project.not_null_stg_orders_order_id.81cfe2fe64
+[0m23:12:47.696842 [debug] [Thread-4 (]: Began running node test.capstone_project.unique_stg_orders_order_id.e3b841c71a
+[0m23:12:47.698209 [debug] [Thread-1 (]: Writing injected SQL for node "test.capstone_project.not_null_stg_orders_customer_id.af79d5e4b5"
+[0m23:12:47.699074 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.capstone_project.not_null_stg_customers_customer_id.e2cfb1f9aa, now test.capstone_project.not_null_stg_orders_order_id.81cfe2fe64)
+[0m23:12:47.700554 [debug] [Thread-2 (]: Finished running node model.capstone_project.int_customer_order_history
+[0m23:12:47.701441 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.capstone_project.unique_stg_customers_customer_id.c7614daada, now test.capstone_project.unique_stg_orders_order_id.e3b841c71a)
+[0m23:12:47.702437 [debug] [Thread-3 (]: Began compiling node test.capstone_project.not_null_stg_orders_order_id.81cfe2fe64
+[0m23:12:47.703250 [debug] [Thread-1 (]: Began executing node test.capstone_project.not_null_stg_orders_customer_id.af79d5e4b5
+[0m23:12:47.704197 [debug] [Thread-2 (]: Began running node test.capstone_project.not_null_stg_products_product_id.6373b0acf3
+[0m23:12:47.705165 [debug] [Thread-4 (]: Began compiling node test.capstone_project.unique_stg_orders_order_id.e3b841c71a
+[0m23:12:47.712114 [debug] [Thread-1 (]: Finished running node test.capstone_project.not_null_stg_orders_customer_id.af79d5e4b5
+[0m23:12:47.712922 [debug] [Thread-3 (]: Writing injected SQL for node "test.capstone_project.not_null_stg_orders_order_id.81cfe2fe64"
+[0m23:12:47.713956 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.capstone_project.int_customer_order_history, now test.capstone_project.not_null_stg_products_product_id.6373b0acf3)
+[0m23:12:47.727537 [debug] [Thread-4 (]: Writing injected SQL for node "test.capstone_project.unique_stg_orders_order_id.e3b841c71a"
+[0m23:12:47.728556 [debug] [Thread-1 (]: Began running node test.capstone_project.unique_stg_products_product_id.7d950a1467
+[0m23:12:47.729953 [debug] [Thread-2 (]: Began compiling node test.capstone_project.not_null_stg_products_product_id.6373b0acf3
+[0m23:12:47.730828 [debug] [Thread-3 (]: Began executing node test.capstone_project.not_null_stg_orders_order_id.81cfe2fe64
+[0m23:12:47.732115 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.capstone_project.not_null_stg_orders_customer_id.af79d5e4b5, now test.capstone_project.unique_stg_products_product_id.7d950a1467)
+[0m23:12:47.737751 [debug] [Thread-2 (]: Writing injected SQL for node "test.capstone_project.not_null_stg_products_product_id.6373b0acf3"
+[0m23:12:47.739084 [debug] [Thread-3 (]: Finished running node test.capstone_project.not_null_stg_orders_order_id.81cfe2fe64
+[0m23:12:47.739584 [debug] [Thread-4 (]: Began executing node test.capstone_project.unique_stg_orders_order_id.e3b841c71a
+[0m23:12:47.740610 [debug] [Thread-1 (]: Began compiling node test.capstone_project.unique_stg_products_product_id.7d950a1467
+[0m23:12:47.741772 [debug] [Thread-3 (]: Began running node test.capstone_project.not_null_stg_stores_store_id.ebecf07ec6
+[0m23:12:47.743322 [debug] [Thread-4 (]: Finished running node test.capstone_project.unique_stg_orders_order_id.e3b841c71a
+[0m23:12:47.744138 [debug] [Thread-2 (]: Began executing node test.capstone_project.not_null_stg_products_product_id.6373b0acf3
+[0m23:12:47.749550 [debug] [Thread-1 (]: Writing injected SQL for node "test.capstone_project.unique_stg_products_product_id.7d950a1467"
+[0m23:12:47.750647 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.capstone_project.not_null_stg_orders_order_id.81cfe2fe64, now test.capstone_project.not_null_stg_stores_store_id.ebecf07ec6)
+[0m23:12:47.751737 [debug] [Thread-4 (]: Began running node test.capstone_project.unique_stg_stores_store_id.2e80d074c2
+[0m23:12:47.753139 [debug] [Thread-2 (]: Finished running node test.capstone_project.not_null_stg_products_product_id.6373b0acf3
+[0m23:12:47.754263 [debug] [Thread-3 (]: Began compiling node test.capstone_project.not_null_stg_stores_store_id.ebecf07ec6
+[0m23:12:47.755136 [debug] [Thread-1 (]: Began executing node test.capstone_project.unique_stg_products_product_id.7d950a1467
+[0m23:12:47.756072 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.capstone_project.unique_stg_orders_order_id.e3b841c71a, now test.capstone_project.unique_stg_stores_store_id.2e80d074c2)
+[0m23:12:47.757023 [debug] [Thread-2 (]: Began running node model.capstone_project.int_product_costs
+[0m23:12:47.942947 [debug] [Thread-1 (]: Finished running node test.capstone_project.unique_stg_products_product_id.7d950a1467
+[0m23:12:47.942057 [debug] [Thread-3 (]: Writing injected SQL for node "test.capstone_project.not_null_stg_stores_store_id.ebecf07ec6"
+[0m23:12:47.944334 [debug] [Thread-4 (]: Began compiling node test.capstone_project.unique_stg_stores_store_id.2e80d074c2
+[0m23:12:47.945470 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.capstone_project.not_null_stg_products_product_id.6373b0acf3, now model.capstone_project.int_product_costs)
+[0m23:12:47.946548 [debug] [Thread-1 (]: Began running node model.capstone_project.mart_most_valuable_customer
+[0m23:12:47.953231 [debug] [Thread-4 (]: Writing injected SQL for node "test.capstone_project.unique_stg_stores_store_id.2e80d074c2"
+[0m23:12:47.954129 [debug] [Thread-2 (]: Began compiling node model.capstone_project.int_product_costs
+[0m23:12:47.955035 [debug] [Thread-3 (]: Began executing node test.capstone_project.not_null_stg_stores_store_id.ebecf07ec6
+[0m23:12:47.956024 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.capstone_project.unique_stg_products_product_id.7d950a1467, now model.capstone_project.mart_most_valuable_customer)
+[0m23:12:47.961173 [debug] [Thread-2 (]: Writing injected SQL for node "model.capstone_project.int_product_costs"
+[0m23:12:47.962473 [debug] [Thread-3 (]: Finished running node test.capstone_project.not_null_stg_stores_store_id.ebecf07ec6
+[0m23:12:47.963409 [debug] [Thread-4 (]: Began executing node test.capstone_project.unique_stg_stores_store_id.2e80d074c2
+[0m23:12:47.964413 [debug] [Thread-1 (]: Began compiling node model.capstone_project.mart_most_valuable_customer
+[0m23:12:47.966322 [debug] [Thread-4 (]: Finished running node test.capstone_project.unique_stg_stores_store_id.2e80d074c2
+[0m23:12:47.974528 [debug] [Thread-1 (]: Writing injected SQL for node "model.capstone_project.mart_most_valuable_customer"
+[0m23:12:47.975733 [debug] [Thread-2 (]: Finished running node model.capstone_project.int_product_costs
+[0m23:12:47.977376 [debug] [Thread-3 (]: Began running node model.capstone_project.int_order_items_joined
+[0m23:12:47.978050 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.capstone_project.not_null_stg_stores_store_id.ebecf07ec6, now model.capstone_project.int_order_items_joined)
+[0m23:12:47.978586 [debug] [Thread-3 (]: Began compiling node model.capstone_project.int_order_items_joined
+[0m23:12:47.984513 [debug] [Thread-1 (]: Began executing node model.capstone_project.mart_most_valuable_customer
+[0m23:12:47.985585 [debug] [Thread-1 (]: Finished running node model.capstone_project.mart_most_valuable_customer
+[0m23:12:47.991998 [debug] [Thread-3 (]: Writing injected SQL for node "model.capstone_project.int_order_items_joined"
+[0m23:12:47.993206 [debug] [Thread-3 (]: Finished running node model.capstone_project.int_order_items_joined
+[0m23:12:47.994606 [debug] [Thread-4 (]: Began running node model.capstone_project.fct_orders
+[0m23:12:47.995435 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.capstone_project.unique_stg_stores_store_id.2e80d074c2, now model.capstone_project.fct_orders)
+[0m23:12:47.996055 [debug] [Thread-4 (]: Began compiling node model.capstone_project.fct_orders
+[0m23:12:48.002417 [debug] [Thread-1 (]: Began running node model.capstone_project.int_store_costs_aggregated
+[0m23:12:48.005662 [debug] [Thread-4 (]: Writing injected SQL for node "model.capstone_project.fct_orders"
+[0m23:12:48.006523 [debug] [Thread-2 (]: Began running node model.capstone_project.int_product_sales_aggregated
+[0m23:12:48.007313 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.capstone_project.mart_most_valuable_customer, now model.capstone_project.int_store_costs_aggregated)
+[0m23:12:48.008715 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.capstone_project.int_product_costs, now model.capstone_project.int_product_sales_aggregated)
+[0m23:12:48.009671 [debug] [Thread-1 (]: Began compiling node model.capstone_project.int_store_costs_aggregated
+[0m23:12:48.010418 [debug] [Thread-4 (]: Began executing node model.capstone_project.fct_orders
+[0m23:12:48.011117 [debug] [Thread-2 (]: Began compiling node model.capstone_project.int_product_sales_aggregated
+[0m23:12:48.020069 [debug] [Thread-1 (]: Writing injected SQL for node "model.capstone_project.int_store_costs_aggregated"
+[0m23:12:48.021448 [debug] [Thread-4 (]: Finished running node model.capstone_project.fct_orders
+[0m23:12:48.027985 [debug] [Thread-2 (]: Writing injected SQL for node "model.capstone_project.int_product_sales_aggregated"
+[0m23:12:48.030156 [debug] [Thread-1 (]: Finished running node model.capstone_project.int_store_costs_aggregated
+[0m23:12:48.031263 [debug] [Thread-2 (]: Finished running node model.capstone_project.int_product_sales_aggregated
+[0m23:12:48.032211 [debug] [Thread-2 (]: Began running node test.capstone_project.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd
+[0m23:12:48.033154 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.capstone_project.int_product_sales_aggregated, now test.capstone_project.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd)
+[0m23:12:48.033761 [debug] [Thread-2 (]: Began compiling node test.capstone_project.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd
+[0m23:12:48.039162 [debug] [Thread-1 (]: Began running node test.capstone_project.not_null_fct_orders_store_id.95d960c3f6
+[0m23:12:48.039991 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.capstone_project.int_store_costs_aggregated, now test.capstone_project.not_null_fct_orders_store_id.95d960c3f6)
+[0m23:12:48.040592 [debug] [Thread-1 (]: Began compiling node test.capstone_project.not_null_fct_orders_store_id.95d960c3f6
+[0m23:12:48.045883 [debug] [Thread-4 (]: Began running node test.capstone_project.not_null_fct_orders_order_id.4e687af8d0
+[0m23:12:48.046722 [debug] [Thread-3 (]: Began running node test.capstone_project.not_null_fct_orders_customer_id.16fe324f7b
+[0m23:12:48.054491 [debug] [Thread-2 (]: Writing injected SQL for node "test.capstone_project.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd"
+[0m23:12:48.055502 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.capstone_project.fct_orders, now test.capstone_project.not_null_fct_orders_order_id.4e687af8d0)
+[0m23:12:48.045559 [debug] [Thread-1 (]: Writing injected SQL for node "test.capstone_project.not_null_fct_orders_store_id.95d960c3f6"
+[0m23:12:48.057120 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.capstone_project.int_order_items_joined, now test.capstone_project.not_null_fct_orders_customer_id.16fe324f7b)
+[0m23:12:48.058250 [debug] [Thread-4 (]: Began compiling node test.capstone_project.not_null_fct_orders_order_id.4e687af8d0
+[0m23:12:48.059196 [debug] [Thread-2 (]: Began executing node test.capstone_project.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd
+[0m23:12:48.060254 [debug] [Thread-3 (]: Began compiling node test.capstone_project.not_null_fct_orders_customer_id.16fe324f7b
+[0m23:12:48.061129 [debug] [Thread-1 (]: Began executing node test.capstone_project.not_null_fct_orders_store_id.95d960c3f6
+[0m23:12:48.067068 [debug] [Thread-4 (]: Writing injected SQL for node "test.capstone_project.not_null_fct_orders_order_id.4e687af8d0"
+[0m23:12:48.068769 [debug] [Thread-2 (]: Finished running node test.capstone_project.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd
+[0m23:12:48.074378 [debug] [Thread-3 (]: Writing injected SQL for node "test.capstone_project.not_null_fct_orders_customer_id.16fe324f7b"
+[0m23:12:48.075907 [debug] [Thread-1 (]: Finished running node test.capstone_project.not_null_fct_orders_store_id.95d960c3f6
+[0m23:12:48.076890 [debug] [Thread-2 (]: Began running node test.capstone_project.relationships_fct_orders_store_id__store_id__ref_stg_stores_.9e37ddd8bc
+[0m23:12:48.078007 [debug] [Thread-4 (]: Began executing node test.capstone_project.not_null_fct_orders_order_id.4e687af8d0
+[0m23:12:48.079129 [debug] [Thread-1 (]: Began running node test.capstone_project.unique_fct_orders_order_id.523ddb6ce5
+[0m23:12:48.079948 [debug] [Thread-3 (]: Began executing node test.capstone_project.not_null_fct_orders_customer_id.16fe324f7b
+[0m23:12:48.080864 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.capstone_project.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd, now test.capstone_project.relationships_fct_orders_store_id__store_id__ref_stg_stores_.9e37ddd8bc)
+[0m23:12:48.082117 [debug] [Thread-4 (]: Finished running node test.capstone_project.not_null_fct_orders_order_id.4e687af8d0
+[0m23:12:48.082933 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.capstone_project.not_null_fct_orders_store_id.95d960c3f6, now test.capstone_project.unique_fct_orders_order_id.523ddb6ce5)
+[0m23:12:48.084409 [debug] [Thread-3 (]: Finished running node test.capstone_project.not_null_fct_orders_customer_id.16fe324f7b
+[0m23:12:48.085296 [debug] [Thread-2 (]: Began compiling node test.capstone_project.relationships_fct_orders_store_id__store_id__ref_stg_stores_.9e37ddd8bc
+[0m23:12:48.086294 [debug] [Thread-4 (]: Began running node model.capstone_project.dim_products
+[0m23:12:48.087328 [debug] [Thread-1 (]: Began compiling node test.capstone_project.unique_fct_orders_order_id.523ddb6ce5
+[0m23:12:48.088211 [debug] [Thread-3 (]: Began running node model.capstone_project.dim_stores
+[0m23:12:48.096633 [debug] [Thread-2 (]: Writing injected SQL for node "test.capstone_project.relationships_fct_orders_store_id__store_id__ref_stg_stores_.9e37ddd8bc"
+[0m23:12:48.097526 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.capstone_project.not_null_fct_orders_order_id.4e687af8d0, now model.capstone_project.dim_products)
+[0m23:12:48.103117 [debug] [Thread-1 (]: Writing injected SQL for node "test.capstone_project.unique_fct_orders_order_id.523ddb6ce5"
+[0m23:12:48.104159 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.capstone_project.not_null_fct_orders_customer_id.16fe324f7b, now model.capstone_project.dim_stores)
+[0m23:12:48.105402 [debug] [Thread-4 (]: Began compiling node model.capstone_project.dim_products
+[0m23:12:48.106228 [debug] [Thread-2 (]: Began executing node test.capstone_project.relationships_fct_orders_store_id__store_id__ref_stg_stores_.9e37ddd8bc
+[0m23:12:48.107301 [debug] [Thread-3 (]: Began compiling node model.capstone_project.dim_stores
+[0m23:12:48.108131 [debug] [Thread-1 (]: Began executing node test.capstone_project.unique_fct_orders_order_id.523ddb6ce5
+[0m23:12:48.118455 [debug] [Thread-4 (]: Writing injected SQL for node "model.capstone_project.dim_products"
+[0m23:12:48.119736 [debug] [Thread-2 (]: Finished running node test.capstone_project.relationships_fct_orders_store_id__store_id__ref_stg_stores_.9e37ddd8bc
+[0m23:12:48.126385 [debug] [Thread-1 (]: Finished running node test.capstone_project.unique_fct_orders_order_id.523ddb6ce5
+[0m23:12:48.132835 [debug] [Thread-3 (]: Writing injected SQL for node "model.capstone_project.dim_stores"
+[0m23:12:48.134551 [debug] [Thread-4 (]: Began executing node model.capstone_project.dim_products
+[0m23:12:48.135987 [debug] [Thread-4 (]: Finished running node model.capstone_project.dim_products
+[0m23:12:48.137061 [debug] [Thread-2 (]: Began running node test.capstone_project.not_null_dim_products_product_id.c8aba288d1
+[0m23:12:48.137808 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.capstone_project.relationships_fct_orders_store_id__store_id__ref_stg_stores_.9e37ddd8bc, now test.capstone_project.not_null_dim_products_product_id.c8aba288d1)
+[0m23:12:48.138350 [debug] [Thread-2 (]: Began compiling node test.capstone_project.not_null_dim_products_product_id.c8aba288d1
+[0m23:12:48.144237 [debug] [Thread-1 (]: Began running node test.capstone_project.unique_dim_products_product_id.ef7b2a9985
+[0m23:12:48.145297 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.capstone_project.unique_fct_orders_order_id.523ddb6ce5, now test.capstone_project.unique_dim_products_product_id.ef7b2a9985)
+[0m23:12:48.146059 [debug] [Thread-1 (]: Began compiling node test.capstone_project.unique_dim_products_product_id.ef7b2a9985
+[0m23:12:48.150966 [debug] [Thread-1 (]: Writing injected SQL for node "test.capstone_project.unique_dim_products_product_id.ef7b2a9985"
+[0m23:12:48.151886 [debug] [Thread-2 (]: Writing injected SQL for node "test.capstone_project.not_null_dim_products_product_id.c8aba288d1"
+[0m23:12:48.153181 [debug] [Thread-3 (]: Began executing node model.capstone_project.dim_stores
+[0m23:12:48.153931 [debug] [Thread-1 (]: Began executing node test.capstone_project.unique_dim_products_product_id.ef7b2a9985
+[0m23:12:48.155406 [debug] [Thread-3 (]: Finished running node model.capstone_project.dim_stores
+[0m23:12:48.157055 [debug] [Thread-1 (]: Finished running node test.capstone_project.unique_dim_products_product_id.ef7b2a9985
+[0m23:12:48.157934 [debug] [Thread-2 (]: Began executing node test.capstone_project.not_null_dim_products_product_id.c8aba288d1
+[0m23:12:48.159527 [debug] [Thread-3 (]: Began running node test.capstone_project.unique_dim_stores_store_id.0479724a85
+[0m23:12:48.160843 [debug] [Thread-2 (]: Finished running node test.capstone_project.not_null_dim_products_product_id.c8aba288d1
+[0m23:12:48.161680 [debug] [Thread-4 (]: Began running node test.capstone_project.not_null_dim_stores_store_id.e93781bc63
+[0m23:12:48.162576 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.capstone_project.dim_stores, now test.capstone_project.unique_dim_stores_store_id.0479724a85)
+[0m23:12:48.164129 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.capstone_project.dim_products, now test.capstone_project.not_null_dim_stores_store_id.e93781bc63)
+[0m23:12:48.164993 [debug] [Thread-3 (]: Began compiling node test.capstone_project.unique_dim_stores_store_id.0479724a85
+[0m23:12:48.165817 [debug] [Thread-4 (]: Began compiling node test.capstone_project.not_null_dim_stores_store_id.e93781bc63
+[0m23:12:48.171391 [debug] [Thread-3 (]: Writing injected SQL for node "test.capstone_project.unique_dim_stores_store_id.0479724a85"
+[0m23:12:48.177180 [debug] [Thread-4 (]: Writing injected SQL for node "test.capstone_project.not_null_dim_stores_store_id.e93781bc63"
+[0m23:12:48.178451 [debug] [Thread-3 (]: Began executing node test.capstone_project.unique_dim_stores_store_id.0479724a85
+[0m23:12:48.179426 [debug] [Thread-3 (]: Finished running node test.capstone_project.unique_dim_stores_store_id.0479724a85
+[0m23:12:48.180312 [debug] [Thread-4 (]: Began executing node test.capstone_project.not_null_dim_stores_store_id.e93781bc63
+[0m23:12:48.181238 [debug] [Thread-4 (]: Finished running node test.capstone_project.not_null_dim_stores_store_id.e93781bc63
+[0m23:12:48.183808 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:12:48.184346 [debug] [MainThread]: Connection 'test.capstone_project.unique_dim_products_product_id.ef7b2a9985' was properly closed.
+[0m23:12:48.184742 [debug] [MainThread]: Connection 'test.capstone_project.not_null_dim_products_product_id.c8aba288d1' was properly closed.
+[0m23:12:48.185061 [debug] [MainThread]: Connection 'test.capstone_project.unique_dim_stores_store_id.0479724a85' was properly closed.
+[0m23:12:48.185411 [debug] [MainThread]: Connection 'test.capstone_project.not_null_dim_stores_store_id.e93781bc63' was properly closed.
+[0m23:12:48.189649 [debug] [MainThread]: Command end result
+[0m23:12:48.266604 [debug] [MainThread]: Wrote artifact WritableManifest to /home/krish/capstone-project/target/manifest.json
+[0m23:12:48.267824 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/krish/capstone-project/target/semantic_manifest.json
+[0m23:12:48.272734 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/krish/capstone-project/target/run_results.json
+[0m23:12:48.275076 [debug] [MainThread]: Acquiring new duckdb connection 'generate_catalog'
+[0m23:12:48.275334 [info ] [MainThread]: Building catalog
+[0m23:12:48.281578 [debug] [ThreadPool]: Acquiring new duckdb connection 'capstone_dev.information_schema'
+[0m23:12:48.287686 [debug] [ThreadPool]: Using duckdb connection "capstone_dev.information_schema"
+[0m23:12:48.288254 [debug] [ThreadPool]: On capstone_dev.information_schema: BEGIN
+[0m23:12:48.288610 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:12:48.289300 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m23:12:48.289558 [debug] [ThreadPool]: Using duckdb connection "capstone_dev.information_schema"
+[0m23:12:48.289785 [debug] [ThreadPool]: On capstone_dev.information_schema: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "capstone_project", "target_name": "dev", "connection_name": "capstone_dev.information_schema"} */
+with relations AS (
+      select
+        t.table_name
+        , t.database_name
+        , t.schema_name
+        , 'BASE TABLE' as table_type
+        , t.comment as table_comment
+      from duckdb_tables() t
+      WHERE t.database_name = 'capstone_dev'
+      UNION ALL
+      SELECT v.view_name as table_name
+      , v.database_name
+      , v.schema_name
+      , 'VIEW' as table_type
+      , v.comment as table_comment
+      from duckdb_views() v
+      WHERE v.database_name = 'capstone_dev'
+    )
+    select
+        'capstone_dev' as table_database,
+        r.schema_name as table_schema,
+        r.table_name,
+        r.table_type,
+        r.table_comment,
+        c.column_name,
+        c.column_index as column_index,
+        c.data_type as column_type,
+        c.comment as column_comment,
+        NULL as table_owner
+    FROM relations r JOIN duckdb_columns() c ON r.schema_name = c.schema_name AND r.table_name = c.table_name
+    WHERE (upper(r.schema_name) = upper('main'))
+    ORDER BY
+        r.schema_name,
+        r.table_name,
+        c.column_index
+[0m23:12:48.298522 [debug] [ThreadPool]: SQL status: OK in 0.008 seconds
+[0m23:12:48.301093 [debug] [ThreadPool]: On capstone_dev.information_schema: ROLLBACK
+[0m23:12:48.301552 [debug] [ThreadPool]: Failed to rollback 'capstone_dev.information_schema'
+[0m23:12:48.301759 [debug] [ThreadPool]: On capstone_dev.information_schema: Close
+[0m23:12:48.310083 [debug] [MainThread]: Wrote artifact CatalogArtifact to /home/krish/capstone-project/target/catalog.json
+[0m23:12:48.329783 [debug] [MainThread]: Wrote artifact WritableManifest to /home/krish/capstone-project/target/manifest.json
+[0m23:12:48.331098 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/krish/capstone-project/target/semantic_manifest.json
+[0m23:12:48.331356 [info ] [MainThread]: Catalog written to /home/krish/capstone-project/target/catalog.json
+[0m23:12:48.331945 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 1.350403, "process_in_blocks": "29784", "process_kernel_time": 0.206256, "process_mem_max_rss": "181860", "process_out_blocks": "7232", "process_user_time": 2.844889}
+[0m23:12:48.332298 [debug] [MainThread]: Command `dbt docs generate` succeeded at 23:12:48.332220 after 1.35 seconds
+[0m23:12:48.332523 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m23:12:48.332741 [debug] [MainThread]: Connection 'capstone_dev.information_schema' was properly closed.
+[0m23:12:48.332982 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d34f696d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d29fc59c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d29fc7ee0>]}
+[0m23:12:48.333216 [debug] [MainThread]: Flushing usage events
+[0m23:13:12.238430 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:13:14.243770 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e16141be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e1938a990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e1513bd90>]}
+
+
+============================== 23:13:14.245868 | 802e791c-828d-4f91-9f7b-adf05e932591 ==============================
+[0m23:13:14.245868 [info ] [MainThread]: Running with dbt=1.11.11
+[0m23:13:14.246180 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'log_path': '/home/krish/capstone-project/logs', 'invocation_command': 'dbt docs serve', 'use_experimental_parser': 'False', 'warn_error': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'log_format': 'default', 'indirect_selection': 'eager', 'fail_fast': 'False', 'profiles_dir': '/home/krish/.dbt', 'printer_width': '80', 'version_check': 'True', 'log_cache_events': 'False', 'empty': 'None', 'quiet': 'False', 'cache_selected_only': 'False', 'debug': 'False', 'target_path': 'None', 'no_print': 'None', 'static_parser': 'True'}
+[0m23:13:14.415471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '802e791c-828d-4f91-9f7b-adf05e932591', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e15e51350>]}
+[0m23:13:14.453304 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '802e791c-828d-4f91-9f7b-adf05e932591', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1e150757b0>]}
