@@ -156,35 +156,46 @@ Rather than maintaining heavy business logic inside visualization engines, Jupyt
 
 ### Core Visual Analytics & Business Answers Surfaced
 
+
 #### 1. Menu Financial Matrix (Net Profit by Product)
 
-![Alt Text](assets/image1.png)
+- **Core Analytics Question:** Which items drive our bottom-line profit, and are they volume-driven or margin-driven?
 
-* **Core Business Question Answered:** Which items drive our bottom-line profit, and are they volume-driven or margin-driven?
-* **Data-Backed Insight:** * **The Volume Drivers:** `for richer or pourover` is the ultimate cash cow, netting close to $9M in total profit, closely followed by `tangaroo` and `vanilla ice`. The top five products rely on high-volume consistency, hovering around **14,000 units sold** each.
-* **The High-Margin Hidden Gems:** An unexpected anomaly appears after `chai and mighty`. Products like `flame impala` through `the krautback` experience a massive drop in demand, selling only around **3,800 units each**. However, despite moving less than a third of the volume, they still generate **$3M to $4M in total profit**.
-* **Strategic Recommendation:** These low-volume items possess outstanding unit economics and exceptionally high profit margins. Marketing should actively push these items to increase sales volume, as they will scale profitability significantly faster than the current top-tier products.
+ ![Alt Text](assets/image1.png)
 
+- **Insights:** * **The Volume Drivers:** `for richer or pourover` is the ultimate cash cow, netting close to $9M in total profit, closely followed by `tangaroo` and `vanilla ice`. The top five products rely on high-volume consistency, hovering around 14,000 units sold each.
+    
+    - **The High-Margin Hidden Gems:** An unexpected anomaly appears after `chai and mighty`. Products like `flame impala` through `the krautback` experience a massive drop in demand, selling only around 3,800 units each. However, despite moving less than a third of the volume, they still generate $3M to $4M in total profit.
+        
+- **Next steps:** These low-volume items possess outstanding unit economics and exceptionally high profit margins. Marketing should actively push these items to increase sales volume, as they will scale profitability significantly faster than the current top-tier products.
 
 
 #### 2. Regional Performance Matrix (Store Revenue vs Net Margins)
 
 ![Alt Text](assets/image2.png)
 
-* **Core Business Question Answered:** Which geographic storefronts are highly operational, and what are their baseline margins?
-* **Data-Backed Insight:** * **The Financial Powerhouses:** `Philadelphia` is the company’s highest-performing market, pulling in **$40.7M in revenue** and netting **$32.3M in profit**. `Brooklyn` follows as a strong second engine with **$21.9M in revenue** and **$17.4M in profit**.
-* **The Unit Economics:** Both operational stores display incredible structural efficiency, executing at a nearly identical, highly optimized profit margin (**79.4% for Philadelphia** and **79.3% for Brooklyn**).
-* **Data Pipeline / Operational Warning:** `Chicago`, `Los Angeles`, `New Orleans`, and `San Francisco` register absolute zeros across revenue, profit, and margin.
-* **Strategic Action:** This indicates either a critical upstream data ingestion failure where transaction seed data for these regions is missing, or these are impending storefront expansion sites currently waiting for a cold market launch.
-
+- **Core Analytics Question:** Which geographic storefronts are highly operational, and what are their baseline margins?
+    
+- **Insights:** * **The Financial Powerhouses:** `Philadelphia` is the company’s highest-performing market, pulling in $40.7M in revenue and netting $32.3M in profit. `Brooklyn` follows as a strong second engine with $21.9M in revenue and $17.4M in profit.
+    
+    - **The Unit Economics:** Both operational stores display incredible structural efficiency, executing at a nearly identical, highly optimized profit margin (79.4% for Philadelphia and 79.3% for Brooklyn).
+        
+    - **Data Pipeline / Operational Warning:** `Chicago`, `Los Angeles`, `New Orleans`, and `San Francisco` register absolute zeros across revenue, profit, and margin.
+        
+- **Next steps:** Investigate upstream data ingestion to determine if transaction seed data for these zero-revenue regions is missing, or confirm with operations if these are impending storefront expansion sites currently waiting for a cold market launch.
+    
 
 
 #### 3. High-Value Consumer Tiering (Top 10 LTV Profiles)
 
 ![alt text](assets/image3.png)
 
-* **Core Business Question Answered:** Who are our most valuable customers, and what are their ordering behaviors?
-* **Data-Backed Insight:**
-* **The LTV Leaderboard:** Customer value is tightly clustered at the top tier. `David Leonard` leads the ecosystem with a lifetime value (LTV) of **$247,800.00**, closely trailed by `Jesse Moore` ($244,400.00) and `Diane Davis` ($243,900.00).
-* **The Transactional Outliers (Wholesale Profiles):** While the majority of top spenders have an average transaction ticket size floating around **$2,000 per order**, a massive structural variance occurs with **Holly Johnson** and **Julie Robinson**.
-* **Strategic Action:** Holly has an average ticket size of **$5,297.78** and Julie maintains an average order value of **$5,306.82**. These are not typical retail consumers; they represent high-value corporate catering accounts or B2B commercial entities. The CRM team should immediately separate these corporate buyers into an exclusive account-managed retention program.
+- **Core Analytics Question:** Who are our most valuable customers, and what are their ordering behaviors?
+    
+- **Insights:**
+    
+    - **The LTV Leaderboard:** Customer value is tightly clustered at the top tier. `David Leonard` leads the ecosystem with a lifetime value (LTV) of $247,800.00, closely trailed by `Jesse Moore` ($244,400.00) and `Diane Davis` ($243,900.00).
+        
+    - **The Transactional Outliers (Wholesale Profiles):** While the majority of top spenders have an average transaction ticket size floating around $2,000 per order, a massive structural variance occurs with Holly Johnson and Julie Robinson.
+        
+- **Next steps:** Holly has an average ticket size of $5,297.78 and Julie maintains an average order value of $5,306.82. Because these represent high-value corporate catering accounts or B2B commercial entities rather than standard retail consumers, the CRM team must immediately separate these corporate buyers into an exclusive account-managed retention program.
